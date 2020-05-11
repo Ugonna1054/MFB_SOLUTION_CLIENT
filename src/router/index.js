@@ -164,7 +164,27 @@ const routes = [
         component: () => import("../views/Admin/Reports/TrialBalance.vue")
       }
     ]
-  }
+  },
+
+  //Cso/Supervisor Routes
+  {
+    path: "/Cso",
+    name: "Cso",
+    component: () => import("../views/Cso/Brain/Brain.vue"),
+    children: [
+      {
+        path: "/",
+        name: "Dashboard",
+        component: () => import("../views/Cso/Dashboard/Dashboard.vue")
+      },
+      {
+        path: "/Cso/User",
+        name: "User",
+        component: () => import("../views/Cso/User/User.vue")
+      },
+    ]
+  },
+
 ];
 
 const router = new VueRouter({

@@ -148,9 +148,9 @@
               <br />
               <!-- <span class="mt-3 text-center mb-3">Login</span> -->
               <div class="mt-5">
-                <form action  @submit.prevent="Login">
-                  <input type="email" class="form-control mb-4" placeholder="USERNAME"  />
-                  <input type="password" class="form-control mb-4" placeholder="PASSWORD"  />
+                <form action @submit.prevent="Login">
+                  <input type="email" class="form-control mb-4" placeholder="USERNAME" />
+                  <input type="password" class="form-control mb-4" placeholder="PASSWORD" />
                   <router-link to="#" class="float-right transaction-title mb-3">Forgot password</router-link>
                   <input type="submit" value="LET'S GO" class="btn btn-primary btn-block" />
                 </form>
@@ -185,12 +185,11 @@
               <br />
               <!-- <span class="mt-3 text-center mb-3">Login</span> -->
               <div class="mt-5">
-                <form action   @submit.prevent="Signup">
+                <form action @submit.prevent="Signup">
                   <input
                     type="email"
                     class="form-control mb-4"
                     placeholder="Enter  your email to join"
-                    
                   />
                   <p
                     class="transaction-title"
@@ -232,10 +231,10 @@ export default {
   },
   methods: {
     Login() {
-        this.$router.push("/dashboard")
+      this.$router.push("/dashboard");
     },
     Signup() {
-        this.$router.push("/admin")
+      this.$router.push("/admin");
     }
   }
 };
