@@ -119,6 +119,11 @@ const routes = [
   },
   //Admin Routes
   {
+    path: "/admin/login",
+    name: "admin/login",
+    component: () => import("../views/Admin/Login/Login.vue")
+  },
+  {
     path: "/Admin",
     name: "Admin",
     component: () => import("../views/Admin/Brain/Brain.vue"),
