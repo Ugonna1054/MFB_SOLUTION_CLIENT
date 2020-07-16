@@ -8,7 +8,7 @@
           <div class="col-md-10">
             <!-- Table  start -->
             <div class="table-responsive">
-              <div class="transaction-title mt-3">Account Balance</div>
+              <div class="transaction-title mt-3">Account Balances</div>
               <table>
                 <tr class="th-1">
                   <th>Account</th>
